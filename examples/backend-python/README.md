@@ -140,6 +140,14 @@ docker-compose run --rm backend-python pytest
 
 Este comando construye la imagen (si no existe) y corre los tests en un contenedor efímero.
 
+### Abrir una shell interactiva dentro del contenedor
+
+```bash
+docker-compose run --rm backend-python /bin/sh
+```
+
+Una vez adentro puedes ejecutar comandos como `pytest`, revisar logs o inspeccionar dependencias sin afectar tu entorno local.
+
 ---
 
 ¿Quieres contribuir? Abre un issue o PR con mejoras al prompt, manejo de errores o integración de nuevas herramientas.

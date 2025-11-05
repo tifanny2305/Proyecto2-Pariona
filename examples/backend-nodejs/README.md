@@ -129,6 +129,14 @@ docker-compose run --rm backend-nodejs npm run test:e2e
 
 También puedes usar `npm run test` en lugar de `test:e2e` si quieres correr el set completo.
 
+### Abrir una shell interactiva dentro del contenedor
+
+```bash
+docker-compose run --rm backend-nodejs /bin/sh
+```
+
+Desde ahí puedes lanzar comandos como `npm run test:e2e` o inspeccionar la estructura del contenedor sin modificar tu entorno local.
+
 ---
 
 ## 8. Troubleshooting rápido
